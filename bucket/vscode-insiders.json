@@ -15,15 +15,15 @@
     "architecture": {
         "64bit": {
             "url": "https://update.code.visualstudio.com/latest/win32-x64-archive/insider#/dl.7z",
-            "hash": "44a43cae6fc76489cd595dc06ccb8c20781908574401ab90198d062e8ea06f55"
+            "hash": "a855553b70ba3b5e36128a1c3f7daa4c605a1bd407ae5729128f8f7ff40c18db"
         },
         "32bit": {
             "url": "https://update.code.visualstudio.com/latest/win32-archive/insider#/dl.7z",
-            "hash": "eb1be8cb87f6d9feb379fad24a6ea4e29320fc1af7dc46c2b76f94f9da6624a3"
+            "hash": "6827e1d4b4da63b6187fc8a1184819409364997d06b620679ecc0d146f0af7f1"
         },
         "arm64": {
             "url": "https://update.code.visualstudio.com/latest/win32-arm64-archive/insider#/dl.7z",
-            "hash": "e756c7ad9ade017dc51f6e1185ac751cc5826850f080f604528684b1bfdbd17a"
+            "hash": "baa11a82521f53752ca2a0ed35767150a027af6dcacbc0cbefd39e827189cda7"
         }
     },
     "post_install": [

@@ -1,10 +1,10 @@
 {
-    "version": "0.10.0-dev-361-ge3e6fadfd",
+    "version": "0.10.0-1950",
     "description": "Vim fork focused on extensibility and usability",
     "homepage": "https://neovim.io",
     "license": {
         "identifier": "Apache-2.0,Vim",
-        "url": "https://github.com/neovim/neovim/blob/master/LICENSE"
+        "url": "https://github.com/neovim/neovim/blob/master/LICENSE.txt"
     },
     "suggest": {
         "vcredist": "extras/vcredist2022"
@@ -12,23 +12,15 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/neovim/neovim/releases/download/nightly/nvim-win64.zip",
-            "hash": "551c3cbc1558f7fa7dba11dc2452553e242fcbe22d69b97273c72eccb4297402"
+            "hash": "d6488c05f4c073ab641e8bf37eafa4917f729409d595f1b164954a2bc41b3786"
         }
     },
     "extract_dir": "nvim-win64",
-    "bin": [
-        "bin\\nvim.exe",
-        "bin\\nvim-qt.exe"
-    ],
-    "shortcuts": [
-        [
-            "bin\\nvim-qt.exe",
-            "Neovim"
-        ]
-    ],
+    "bin": "bin\\nvim.exe",
     "checkver": {
-        "url": "https://api.github.com/repos/neovim/neovim/releases",
-        "regex": "NVIM v([\\w.-]+)\\+([\\w.-]+)",
+        "url": "https://api.github.com/repositories/16408992/releases/tags/nightly",
+        "jsonpath": "$.body",
+        "regex": "NVIM v([\\d.]+)-dev-([a-f\\d]+)",
         "replace": "${1}-${2}"
     },
     "autoupdate": {

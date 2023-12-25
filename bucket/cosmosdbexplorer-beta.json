@@ -1,12 +1,12 @@
 {
-    "version": "0.9.7-beta",
+    "version": "0.9.9-beta",
     "description": "A nice client explorer for Microsoft Cosmos DB. It mimics the Data Explorer available on the Azure Portal on the desktop.",
     "homepage": "https://github.com/sachabruttin/CosmosDbExplorer",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sachabruttin/CosmosDbExplorer/releases/download/v0.9.7-beta/CosmosDbExplorer.zip",
-            "hash": "3c1436f7f9aa1c483c905d8762f79153247954ffd140821b03b93683b94e8b4c"
+            "url": "https://github.com/sachabruttin/CosmosDbExplorer/releases/download/v0.9.9-beta/CosmosDbExplorer.zip",
+            "hash": "e783897a103b3a544931de5bb5a7cb97260a00da0e2d4042705bd53ca140f581"
         }
     },
     "shortcuts": [
@@ -16,7 +16,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/sachabruttin/CosmosDbExplorer/releases",
+        "url": "https://api.github.com/repositories/113423601/releases",
         "regex": "v([\\d.]+(-beta)?)"
     },
     "autoupdate": {

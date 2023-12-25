@@ -1,0 +1,34 @@
+{
+    "version": "122.0.6206.0",
+    "description": "An open source tool for automated testing of webapps across many browsers",
+    "homepage": "https://chromedriver.chromium.org/",
+    "license": "BSD-3-Clause",
+    "architecture": {
+        "64bit": {
+            "url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/122.0.6206.0/win64/chromedriver-win64.zip",
+            "hash": "4c4379472c8bd1beb3b952614a1ca8b13ab1d1a15f75d4ad9d6796d606d26602",
+            "extract_dir": "chromedriver-win64"
+        },
+        "32bit": {
+            "url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/122.0.6206.0/win32/chromedriver-win32.zip",
+            "hash": "294b3289a93c93616c7c3c53686b441836202c8a965848350f0cfb281ae94490",
+            "extract_dir": "chromedriver-win32"
+        }
+    },
+    "bin": "chromedriver.exe",
+    "checkver": {
+        "url": "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json",
+        "jsonpath": "$.channels.Canary.version",
+        "regex": "([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/$version/win64/chromedriver-win64.zip"
+            },
+            "32bit": {
+                "url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/$version/win32/chromedriver-win32.zip"
+            }
+        }
+    }
+}
